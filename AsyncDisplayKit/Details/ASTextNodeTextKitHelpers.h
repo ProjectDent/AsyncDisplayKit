@@ -11,12 +11,17 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef struct {
-  NSTextStorage *textStorage;
-  NSTextContainer *textContainer;
-  NSLayoutManager *layoutManager;
-  UITextView *textView;
-} ASTextKitComponents;
+@interface ASTextKitComponents : NSObject
+
+@property (nonatomic, strong, readonly) NSTextStorage *textStorage;
+@property (nonatomic, strong, readonly) NSTextContainer *textContainer;
+@property (nonatomic, strong, readonly) NSLayoutManager *layoutManager;
+
+- (instancetype)initWithTextStorage:(NSTextStorage *)textStorage
+                      textContainer:(NSTextContainer *)textContainer
+                      layoutManager:(NSLayoutManager *)layoutManager;
+
+@end
 
 // Convenience.
 /**
@@ -26,11 +31,4 @@ typedef struct {
   @return A `ASTextKitComponents` containing the created components. The text view component will be nil.
   @discussion The returned components will be hooked up together, so they are ready for use as a system upon return.
  */
-extern ASTextKitComponents ASTextKitComponentsCreate(NSAttributedString *attributedSeedString, CGSize textContainerSize);
-/**
-  @abstract Returns the bounding size for the text view's text.
-  @param components The TextKit components to calculate the constrained size of the text for.
-  @param constrainedWidth The constraining width to be used during text-sizing. Usually, this value should be the receiver's calculated size.
-  @result A CGSize representing the bounding size for the receiver's text.
- */
-extern CGSize ASTextKitComponentsSizeForConstrainedWidth(ASTextKitComponents components, CGFloat constrainedWidth);
+extern ASTextKitComponents *ASTextKitComponentsCreate(NSAttributedString *attributedSeedString, CGSize textContainerSize);

@@ -32,6 +32,12 @@ if you're using Swift:
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 ```
 
+If any of your other pods are built in Swift, Cocoapods will use frameworks instead of static libraries. You will need to import the framework in files that use AsyncDisplayKit:
+
+```swift
+import AsyncDisplayKit
+```
+
 AsyncDisplayKit Nodes are a thread-safe abstraction layer over UIViews and
 CALayers:
 
