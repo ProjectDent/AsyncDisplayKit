@@ -501,6 +501,14 @@ static void *kASDataUpdatingQueueContext = &kASDataUpdatingQueueContext;
 }
 
 - (ASCellNode *)nodeAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section >= [self numberOfSections]) {
+        return nil;
+    }
+    
+    if (indexPath.row >= [self numberOfRowsInSection:indexPath.section]) {
+        return nil;
+    }
+    
   __block ASCellNode *node;
 
   [self queryDataWithBlock:^{
