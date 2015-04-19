@@ -7,7 +7,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import <AsyncDisplayKit/ASDealloc2MainObject.h>
+#import "ASDealloc2MainObject.h"
 
 
 @class ASCellNode;

@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#import "ASDisplayNodeInternal.h"
 
 static const CGFloat kCornerRadius = 2.5;
 static const UIEdgeInsets padding = {2, 4, 1.5, 4};

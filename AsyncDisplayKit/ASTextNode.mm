@@ -8,13 +8,13 @@
 
 #import "ASTextNode.h"
 
-#import <AsyncDisplayKit/_ASDisplayLayer.h>
-#import <AsyncDisplayKit/ASAssert.h>
-#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
-#import <AsyncDisplayKit/ASHighlightOverlayLayer.h>
-#import <AsyncDisplayKit/ASTextNodeCoreTextAdditions.h>
-#import <AsyncDisplayKit/ASTextNodeTextKitHelpers.h>
-#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#import "_ASDisplayLayer.h"
+#import "ASAssert.h"
+#import "ASDisplayNode+Subclasses.h"
+#import "ASHighlightOverlayLayer.h"
+#import "ASTextNodeCoreTextAdditions.h"
+#import "ASTextNodeTextKitHelpers.h"
+#import "ASDisplayNodeExtras.h"
 
 #import "ASTextNodeRenderer.h"
 #import "ASTextNodeShadower.h"

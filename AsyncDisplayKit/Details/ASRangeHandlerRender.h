@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <AsyncDisplayKit/ASRangeHandler.h>
+#import "ASRangeHandler.h"
 
 @interface ASRangeHandlerRender : NSObject <ASRangeHandler>
 

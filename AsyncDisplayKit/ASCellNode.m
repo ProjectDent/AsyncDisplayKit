@@ -8,9 +8,9 @@
 
 #import "ASCellNode.h"
 
-#import <AsyncDisplayKit/_ASDisplayView.h>
-#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
-#import <AsyncDisplayKit/ASTextNode.h>
+#import "_ASDisplayView.h"
+#import "ASDisplayNode+Subclasses.h"
+#import "ASTextNode.h"
 
 
 #pragma mark -
