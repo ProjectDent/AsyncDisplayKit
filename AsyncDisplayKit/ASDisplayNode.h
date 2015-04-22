@@ -154,6 +154,7 @@ typedef CALayer *(^ASDisplayNodeLayerBlock)();
  */
 @property (nonatomic, readonly, assign) CGSize constrainedSizeForCalculatedSize;
 
+- (void)invalidateCalculatedSize;
 
 /** @name Managing the nodes hierarchy */
 
